@@ -1,0 +1,21 @@
+.logo {
+    height: 70px;
+}
+
+header{
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: 30%;
+    background-image: url(../imgenes/fondopag.jpg);
+    height: 90vh;
+
+    position: relative;
+}      
+
+.oscurecerfondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.686);
+
+}
