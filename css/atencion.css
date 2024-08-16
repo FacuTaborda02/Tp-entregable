@@ -1,0 +1,20 @@
+.barra-negra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 0 10px; /* Ajusta el relleno para los elementos de contacto */
+    margin: 20px 0; /* Corregido para margen */
+}
+
+.barra-negra-dos {
+    background-image: url(../img-atencion-cliente/barra-negra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.294);
+    margin: 20px 0; /* Corregido para margen */
+}

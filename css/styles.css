@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Imagenes */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Logo */
 .logo {
     height: 70px;
@@ -12,10 +18,10 @@
 
 /* Header */
 header {
-    background-repeat: no-repeat;    
+    background-image: url(../imagenes/fondopag.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../imagenes/fondopag.jpg);
     height: 90vh;
     position: relative;
 }
@@ -31,21 +37,18 @@ header {
 /* Sección de Motos */
 .motos {
     display: flex;
-    flex-direction: column; /* Alinea la imagen y el texto verticalmente */
-    align-items: center; /* Centra el contenido dentro de cada item */
-    text-align: center; /* Centra el texto dentro de cada item */
-    max-width: 100%; /* Evita que los items se salgan del contenedor */
-    padding: 20px; /* Añade padding para mejor espaciado */
-    box-sizing: border-box; /* Incluye el padding en el tamaño del contenedor */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Estilo para las imágenes de motos */
-.crf250, .crf450 {
-    margin: 20px 0; /* Ajusta el margen para móviles */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 100%; /* Asegura que la imagen no se desborde */
-    border-radius: .4rem; /* Borde redondeado */
-    background-color: rgb(0, 0, 0); /* Fondo negro opcional */
+.card-img-top {
+    height: auto;
+    max-width: 100%;
+    border-radius: .4rem;
 }
 
 /* Lore de las Motos */
@@ -56,22 +59,58 @@ header {
 
 /* Ubicación */
 .ubicacion {
-    text-align: center; /* Centra el texto */
-    margin: 20px; /* Ajusta los márgenes */
+    text-align: center;
+    margin: 20px;
 }
 
 /* Contacto */
 .contacto {
     display: flex;
-    flex-direction: column; /* Cambia la dirección del layout para móviles */
+    flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
     box-sizing: border-box;
 }
 
 .contacto a {
-    color: #fff; /* Color blanco para el texto de los enlaces */
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    margin: 5px 0; /* Márge */
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+/* Fondo Negro */
+.fondonegro {
+    background-image: url('../img-atencion-cliente/barra-negra.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 25vh;
+    position: relative;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .logo {
+        height: 50px;
+    }
+    header {
+        height: 70vh; /* Ajusta la altura del header en pantallas más pequeñas */
+    }
+    .motos {
+        padding: 10px;
+    }
+    .card {
+        width: 100%; /* Las cards ocuparán todo el ancho disponible */
+    }
+    .contacto {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto del navbar */
+    }
 }
